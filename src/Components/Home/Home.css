@@ -1,0 +1,28 @@
+.banner {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 80px;
+}
+
+.banner-contents {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content span {
+	color: crimson;
+}
+.content {
+	width: 70%;
+}
+
+.content button {
+	border-radius: 50px;
+	color: white;
+	background-color: crimson;
+}
+.b_image img {
+	margin-left: 80px;
+}
+/* responsive */
+

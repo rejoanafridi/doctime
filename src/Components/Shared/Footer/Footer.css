@@ -1,0 +1,31 @@
+footer{
+     margin-top: 50px;
+     padding: 100px;
+}
+.quick_link {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+
+}
+.quick_link i{
+     margin: 5px;
+     font-weight: normal;
+}
+.quick_link i:hover{
+     color: crimson;
+     font-weight: bold;
+}
+.quick_link span{
+     color: crimson;
+}
+.copyright-text span{
+     color: crimson;
+     font-weight: 700;
+     font-size: 600;
+     font-family: sans-serif;
+}
+hr{
+     color: crimson;
+     font-weight: 700;
+}

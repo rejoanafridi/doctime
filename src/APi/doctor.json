@@ -1,0 +1,45 @@
+[
+	{
+		"id": 1,
+		"name": "Md Ahsan Habib",
+		"image": "https://images.unsplash.com/photo-1584467735867-4297ae2ebcee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=705&q=80",
+		"short": "Associate Professor,DMC-Dhaka",
+          "schedule":"10am-5pm"
+		
+	},
+	{
+		"id": 2,
+		"name": "Samim Rahman",
+		"image": "https://images.unsplash.com/photo-1550831107-1553da8c8464?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGRvY3RvcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+		"short": "Head Of department, DMC-Dhaka",
+		"schedule":"10am-5pm"
+	},
+	{
+		"id": 3,
+		"name": "ABdul Hannan ",
+		"image": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGRvY3RvcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+		"short": "Medicine, SSMC-Dhaka",
+		"schedule":"10am-5pm"
+	},
+	{
+		"id": 4,
+		"name": "Razzakur Rahman",
+		"image": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGRvY3RvcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+		"short": "baby Health and Brain, SSMC-Dhaka",
+		"schedule":"10am-8pm"
+	},
+	{
+		"id": 5,
+		"name": "Afsara Rahman",
+		"image": "https://images.unsplash.com/photo-1606318313647-137d1f3b4d3c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRvY3RvcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+		"short": "Gayne, DMC-Dhaka",
+		"schedule":"10am-6pm"
+	},
+	{
+		"id": 6,
+		"name": "Ayra Islam",
+		"image": "https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG9jdG9yc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+		"short": "Gayne, DMC-Dhaka",
+		"schedule":"10am-6pm"
+	}
+]

@@ -1,0 +1,48 @@
+[
+	{
+		"id": 1,
+		"name": "Free Checkup",
+		"image": "fas fa-user-check",
+		"short": "We are offering you free checkup.",
+		"description": "It is known that “prevention is better than cure”. Evercare Hospital Dhaka recognizes the importance of preventive healthcare and has created a separate clinic to help you with these needs."
+	},
+	{
+		"id": 2,
+		"name": "Free Medicine",
+		"image": "fas fa-capsules",
+		"short": "Our citizens can take health suggestions for free now",
+		"description": "There are numerous prescription drug assistance programs available to low income as well as uninsured families. Vouchers as well as free or low cost medications may be provided to those in need of help. Additional support may also be given to families or individuals that do not have health insurance."
+		
+	},
+	{
+		"id": 3,
+		"name": "24/7 Ambulance",
+		"image": "fas fa-ambulance",
+		"short": "Standard Ambulance with Proper equipment; Stretchers are available to carrying the patient;",
+		"description": "Basic life supports are provided in almost every ambulance while advanced life support services are provided by several ambulance services and all helicopter",
+		"price": 25
+	},
+	{
+		"id": 4,
+		"name": "Patient Food",
+		"image": "fas fa-utensils",
+		"short": "In the hospital, each patient is visited by a patient menu assistant daily to take meal selections. Meals will be scheduled for a time of delivery to the unit.",
+		"description": "The Patient Food Services department consists of a specialized team of Supervisors, Cooks, Receivers, Clerks and Food Service Workers who collectively work together to offer a 2-week selective and non-selective menu. Due to the diversity of patient needs, we offer a variety of meal service styles, including tray service, dining room/table service and buffet style service. Meal selections are also offered in some areas. Most patient care areas also have food service pantries that are accessible 24 hours per day."
+	
+	},
+	{
+		"id": 5,
+		"name": "Doctors",
+		"image": "fas fa-user-md",
+		"short": "we provide top class senior and experianced doctor in Bangladesh.",
+		"description": "State of the art technology and expertise combined with the support of our friendly staff, we strive each day to be the top healthcare provider, not only in Bangladesh but within the Asia-Pacific region"
+	},
+	{
+		"id": 6,
+		"name": "Bed Facility",
+		"image": "fas fa-bed",
+		"short": "We have every category of bed to cater the choices of patients",
+		"description": "You may choose from different categories of in-patient beds/rooms of the hospital, including Ward, Double Bed, Standard, private & deluxe Single and Standard & VIP / Deluxe Suite . Beds/Cabins are allotted depending on your choice and availability. We also have Day Care Unit for patients who have had out-patient procedures, as well ten specialized state-of-the-art Intensive Care Unit"
+	}
+]
+

@@ -1,0 +1,21 @@
+.about-container{
+     text-align: center;
+     margin: 40px 100px;
+     
+}
+.about-container span{
+     color: crimson;
+}
+.abouts{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     padding-top:20px ;
+}
+.a_img{
+     width: 100%;
+}
+.about {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}

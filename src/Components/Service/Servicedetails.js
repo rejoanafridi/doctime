@@ -21,7 +21,7 @@ const Servicedetails = () => {
 	// }, [service]);
 	return (
 		<div>
-			<div className="s-container">
+			<div className="">
 				<div className="service-details">
 					{/* {single.map((data) => (
 						<Details key={data.id} data={data}></Details>

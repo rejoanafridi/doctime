@@ -6,7 +6,7 @@ const Services = ({ serv }) => {
 	// console.log(image);
 	return (
 		
-		<div className="item">
+		<div className="item px-5 ">
 			<div>
 				<i className={image}></i>
 				<h3>{name}</h3>

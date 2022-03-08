@@ -17,7 +17,7 @@ import AuthProvider from "./Components/contexts/AuthProvider";
 
 const App = () => {
 	return (
-		<div>
+		<div className="container">
 			<AuthProvider>
 				<Router>
 					<Header></Header>

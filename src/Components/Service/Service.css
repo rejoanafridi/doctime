@@ -26,3 +26,25 @@
 .item fas{
     font-size: 40px
 }
+
+@media (min-width: 368px){
+   .items{
+     display: grid;
+	grid-template-columns: repeat(1, 1fr);
+     grid-gap: 20px;
+   }
+}
+@media (min-width: 768px){
+     .items{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+        }
+}
+@media (min-width: 1168px){
+     .items{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px;
+        }
+}

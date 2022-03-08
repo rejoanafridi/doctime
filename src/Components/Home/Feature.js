@@ -13,11 +13,11 @@ const Feature = () => {
 
 	return (
 		<div>
-			<div className="d-container">
+			<div className="py-5 text-center">
 				<h1>
 					Our <span> Doctors </span>{" "}
 				</h1>
-				<div className="doctors">
+				<div className="container doctors">
 							{
 								doctor.map((data) => <Doctor key={data.id} doctor={data}></Doctor>)
 							}

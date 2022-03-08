@@ -1,17 +1,19 @@
 
-nav{
+.navbar{
      display: grid;
-     grid-template-columns: repeat(2, 1fr);
+     grid-template-columns: repeat(3, 1fr);
      box-shadow: 5px 5px 5px #dd5d7f;
      align-items: center;
      padding: 20px 10px;
      margin: 0 50px;
 }
 .logo{
-     font-size:25px;
+     
      color: black;
+     font-size: 30px;
      font-family: sans-serif;
      font-weight: 600;
+     
 }
 .logo span{
      color: crimson;
@@ -21,9 +23,7 @@ nav{
 }
 .nav-items{
      display: flex;
-     justify-content: space-between;
-     align-items: center;
-     
+ 
      
     
 }
@@ -47,10 +47,48 @@ nav{
 .login{
      display: flex;
      align-items: center;
+     padding: 0px 50px;
+   
+     
 }
 .login p{
      color: crimson;
-     font-size: 25px;
+     font-size: 15px;
      font-weight: 600;
      margin-right: 50px;
+     width: 130px;
+}
+
+
+@media (min-width: 368px){
+     .nav-items{
+          display:none;
+         
+     }
+     .login{
+          display: none;
+     }
+     .logo{
+          font-size: 15px;
+     }
+}
+@media (min-width: 768px){
+     .nav-items{
+          display:none;
+     }
+     .login{
+          display: none;
+     }
+   
+}
+@media(min-width: 1220px){
+     .nav-items{
+          display: inline;
+     }
+     .login{
+          display: flex;
+     }
+     .logo{
+          font-size: 30px;
+     }
 }

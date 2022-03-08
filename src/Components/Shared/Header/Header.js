@@ -5,14 +5,14 @@ import useFirebase from "../../../hooks/firebase";
 const Header = () => {
 	const { logOut, user } = useFirebase();
 	return (
-		<div>
-			<nav>
+		<>
+			<nav className="navbar">
 				<div className="logo">
-					<Link to="/">
+					<Link to="/" className="d-flex">
 						Doctor-
 						<span>
 							Care <i class="fas fa-user-md"></i>
-						</span>{" "}
+						</span>
 					</Link>
 				</div>
 				<div className="nav-items">
@@ -26,37 +26,39 @@ const Header = () => {
 						{/* check user logging or not!! */}
 						{user.email ? (
 							<Link to="/booking">Booking</Link>
-						) : <Link to="/login">Booking</Link>}
-					</div>
-					<div className="login">
-						{/* check user logging or not!! */}
-						{user.email ? (
-							<>
-								<p>Hi,{user.email}!</p>
-								<button
-									className="btn btn-danger text-white btn-sm"
-									onClick={logOut}
-									type="button"
-								>
-									Logout
-								</button>
-							</>
 						) : (
-							<>
-								<Link to="/login">
-									{" "}
-									<i class="fas fa-sign-in-alt"> Login </i>{" "}
-								</Link>
-								<Link to="/register">
-									{" "}
-									<i class="fas fa-sign-in-alt"> Sign Up </i>{" "}
-								</Link>
-							</>
+							<Link to="/login">Booking</Link>
 						)}
 					</div>
 				</div>
+				<div className="login">
+					{/* check user logging or not!! */}
+					{user.email ? (
+						<>
+							<p className="">Hi,{user.email}!</p>
+							<button
+								className="btn btn-danger text-white btn-sm"
+								onClick={logOut}
+								type="button"
+							>
+								Logout
+							</button>
+						</>
+					) : (
+						<>
+							<Link to="/login">
+								{" "}
+								<i class="fas fa-sign-in-alt"> Login </i>{" "}
+							</Link>
+							<Link to="/register">
+								{" "}
+								<i class="fas fa-sign-in-alt"> Sign Up </i>{" "}
+							</Link>
+						</>
+					)}
+				</div>
 			</nav>
-		</div>
+		</>
 	);
 };
 

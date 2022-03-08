@@ -15,11 +15,11 @@ const Service = () => {
 
 	return (
 		<div>
-			<section className="service-container">
+			<section className="">
 				<h1 className="service-title">
 					Our <span>Service</span>{" "}
 				</h1>
-				<div className="items">
+				<div className=" container items">
 					{data.map((s) => (
 						<Services key={s.id} serv={s}></Services>
 					))}

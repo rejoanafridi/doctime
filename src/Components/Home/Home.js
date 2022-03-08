@@ -9,32 +9,32 @@ import About from "../Shared/About/About";
 const Home = () => {
 	return (
 		<div>
-			
-			
-			<section className="row banner">
-				<div className="col b_image">
-					<img src={bannerImg} alt="" />
+			<section className="banner">
+				<div className="b_image">
+					<img className="img-fluid" src={bannerImg} alt="" />
 				</div>
-				<div className="col banner-contents">
+				<div className="container banner-contents">
 					<div className="content">
-						<h1>A Modern  <span>Clinic</span>  In your City Now,,</h1>
+						<h1>
+							A Modern <span>Clinic</span> In your City Now,,
+						</h1>
 						<h3>
-							We are Offering <span>70% Discount</span> in every Medical Test. 
+							We are Offering <span>70% Discount</span> in every Medical Test.
 						</h3>
-						<button type="button" className='b-btn'>Booking Now</button>
+						<button type="button" className="b-btn">
+							Booking Now
+						</button>
 					</div>
 				</div>
 			</section>
 
-               {/* Service */}
-               <Service></Service>
+			{/* Service */}
+			<Service></Service>
 
-               {/* Doctors */}
-               <Doctor> </Doctor>
-               {/* About us */}
-               <About></About>
-
-		
+			{/* Doctors */}
+			<Doctor> </Doctor>
+			{/* About us */}
+			<About></About>
 		</div>
 	);
 };

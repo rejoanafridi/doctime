@@ -5,7 +5,7 @@ const Doctor = ({ doctor }) => {
 	return (
 		
 			<div className="doctor">
-				<div>
+				<div className="">
 					<img src={image} alt="doctor_image" />
 					<h3>{name}</h3>
 					<p>{short} </p>

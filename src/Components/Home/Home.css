@@ -24,5 +24,32 @@
 .b_image img {
 	margin-left: 80px;
 }
+
 /* responsive */
 
+@media (min-width: 368px) {
+	.banner {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		/* justify-items: center; */
+		/* justify-content: center; */
+	}
+}
+
+@media (min-width: 768px) {
+	.banner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		/* justify-items: center; */
+		/* justify-content: center; */
+	}
+}
+
+@media (min-width: 1168px) {
+	.banner {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		/* justify-items: center; */
+		/* justify-content: center; */
+	}
+}

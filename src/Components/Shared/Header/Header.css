@@ -5,21 +5,25 @@
      box-shadow: 5px 5px 5px #dd5d7f;
      align-items: center;
      padding: 20px 10px;
-     margin: 0 50px;
+     
+     width: 100%;
+     
 }
 .logo{
      
      color: black;
      font-size: 30px;
      font-family: sans-serif;
-     font-weight: 600;
+     font-weight: 500;
      
 }
 .logo span{
      color: crimson;
+     
 }
 .logo a{
      text-decoration: none;
+     display: flex;
 }
 .nav-items{
      display: flex;
@@ -59,6 +63,11 @@
      width: 130px;
 }
 
+.menu-icons{
+     font-size: 30px;
+     display: none;
+     margin-left: 230px;
+}
 
 @media (min-width: 368px){
      .nav-items{
@@ -69,7 +78,11 @@
           display: none;
      }
      .logo{
-          font-size: 15px;
+          font-size: 12px;
+     }
+     .menu-icons{
+          font-size: 30px;
+          display: inline;
      }
 }
 @media (min-width: 768px){
@@ -79,6 +92,12 @@
      .login{
           display: none;
      }
+     .logo{
+          font-size: 15px;
+     }
+    .menu-icons{
+         display: none;
+    }
    
 }
 @media(min-width: 1220px){
@@ -91,4 +110,5 @@
      .logo{
           font-size: 30px;
      }
+
 }

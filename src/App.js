@@ -43,7 +43,7 @@ const App = () => {
 						<Route path="/doctors">
 							<Feature></Feature>
 						</Route>
-						<Route path="/booking">
+						<Route path="/booking/:bookingId">
 							<Book></Book>
 						</Route>
 						<Route path="/login">

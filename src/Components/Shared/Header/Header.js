@@ -8,7 +8,7 @@ const Header = () => {
 		<>
 			<nav className="navbar">
 				<div className="logo">
-					<Link to="/" className="d-flex">
+					<Link to="/" className="">
 						Doctor-
 						<span>
 							Care <i class="fas fa-user-md"></i>
@@ -32,6 +32,7 @@ const Header = () => {
 					</div>
 				</div>
 				<div className="login">
+				
 					{/* check user logging or not!! */}
 					{user.email ? (
 						<>
@@ -56,7 +57,9 @@ const Header = () => {
 							</Link>
 						</>
 					)}
+					
 				</div>
+				<i className="fas fa-bars menu-icons"></i>
 			</nav>
 		</>
 	);

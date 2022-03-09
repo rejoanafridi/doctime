@@ -23,9 +23,9 @@ const Servicedetails = () => {
 		<div>
 			<div className="">
 				<div className="service-details">
-					{/* {single.map((data) => (
+					{single.map((data) => (
 						<Details key={data.id} data={data}></Details>
-					))} */}
+					))}
 					
 					<p>afridi{id}</p>
 				</div>

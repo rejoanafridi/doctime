@@ -1,64 +1,61 @@
-.d-container{
-     margin: 40px 100px;
-     text-align: center;
-
+.d-container {
+	margin: 40px 100px;
+	text-align: center;
 }
-.d-container span{
-     color: crimson;
-     font-family: sans-serif;
-     font-weight: 600;
-  
+.d-container span {
+	color: crimson;
+	font-family: sans-serif;
+	font-weight: 600;
 }
-.doctors{
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 20px;
-
+.doctors {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
 }
-.doctor{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 10px;
-     box-shadow: 1px 2px 3px 1px crimson;
-     border-radius: 5px;
-     background-color: #dcd1d3;
+.doctor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	box-shadow: 1px 2px 3px 1px crimson;
+	border-radius: 5px;
+	background-color: #dcd1d3;
 }
-.doctor img{
-     height: 100px;
-     width: 100px;
-     border-radius: 50%;
+.doctor img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
 }
-.doctor button{
-     margin: 10px 0;
-     border-radius: 30px;
+.doctor button {
+	margin: 10px 0;
+	border-radius: 30px;
 }
-.icons{
-     display: flex;
-     justify-content: space-around;
-     color: crimson;
+.icons {
+	display: flex;
+	justify-content: space-around;
+	color: crimson;
 }
-.icons i:hover{
-     color: white;
+.icons i:hover {
+	color: white;
 }
-@media (min-width: 368px){
-     .doctors{
-       display: grid;
-       grid-template-columns: repeat(1, 1fr);
-       grid-gap: 20px;
-     }
-  }
-  @media (min-width: 768px){
-       .doctors{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-          }
-  }
-  @media (min-width: 1168px){
-       .doctors{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-          }
-  }
+@media only screen and (min-width: 320px ) and (max-width: 480px )  {
+	.doctors {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px )  {
+	.doctors {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px)  {
+	.doctors {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
+}

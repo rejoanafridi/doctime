@@ -12,7 +12,6 @@
 		"image": "fas fa-capsules fa-5x",
 		"short": "Our citizens can take health suggestions for free medicine now, stay with doctor-care!",
 		"description": "There are numerous prescription drug assistance programs available to low income as well as uninsured families. Vouchers as well as free or low cost medications may be provided to those in need of help. Additional support may also be given to families or individuals that do not have health insurance."
-		
 	},
 	{
 		"id": 3,
@@ -28,14 +27,13 @@
 		"image": "fas fa-utensils fa-5x",
 		"short": "In the hospital, each patient is visited by a patient menu assistant daily to take meal selections. Meals will be scheduled for a time of delivery to the unit.",
 		"description": "The Patient Food Services department consists of a specialized team of Supervisors, Cooks, Receivers, Clerks and Food Service Workers who collectively work together to offer a 2-week selective and non-selective menu. Due to the diversity of patient needs, we offer a variety of meal service styles, including tray service, dining room/table service and buffet style service. Meal selections are also offered in some areas. Most patient care areas also have food service pantries that are accessible 24 hours per day."
-	
 	},
 	{
 		"id": 5,
 		"name": "Doctors",
 		"image": "fas fa-user-md fa-5x",
 		"short": "we provide top class senior and experianced doctor in Bangladesh.",
-		"description": "State of the art technology and expertise combined with the support of our friendly staff, we strive each day to be the top healthcare provider, not only in Bangladesh but within the Asia-Pacific region"
+		"description": "State of the art technology and expertise combined with the support of our friendly staff, we strive each day to be the top healthcare provider, not  in Bangladesh but within the Asia-Pacific region"
 	},
 	{
 		"id": 6,

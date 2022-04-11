@@ -15,7 +15,7 @@ const Service = () => {
 
 	return (
 		<div>
-			<section className="">
+			<section>
 				<h1 className="service-title">
 					Our <span>Service</span>{" "}
 				</h1>

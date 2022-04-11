@@ -21,7 +21,7 @@ const useFirebase = () => {
 	const auth = getAuth();
 	const email = auth.email;
 	const password = auth.password;
-	console.log(auth);
+	// console.log(auth);
 
 	const signInWithGoogleAuth = () => {
 		setLoading(true);

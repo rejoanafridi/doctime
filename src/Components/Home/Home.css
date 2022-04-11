@@ -27,7 +27,7 @@
 
 /* responsive */
 
-@media only screen and (min-width:320px ) and (max-width: 480px )  {
+@media only screen and (min-width: 320px) {
 	.banner {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
@@ -36,7 +36,7 @@
 	}
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px )  {
+@media only screen and (min-width: 481px) {
 	.banner {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -45,10 +45,10 @@
 	}
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1200px)   {
+@media only screen and (min-width: 1024px) {
 	.banner {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		/* justify-items: center; */
 		/* justify-content: center; */
 	}

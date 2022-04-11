@@ -58,7 +58,7 @@
 	margin-left: 230px;
 }
 
-@media only screen and (min-width:320px ) and (max-width: 480px)  {
+@media only screen and (min-width:320px ) {
 	.nav-items {
 		display: none;
 	}
@@ -73,7 +73,7 @@
 		display: inline;
 	}
 }
-@media only screen and (min-width: 481px) and (max-width: 768px )  {
+@media only screen and (min-width: 481px) {
 	.nav-items {
 		display: none;
 	}
@@ -87,7 +87,7 @@
 		display: none;
 	}
 }
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px)  {
 	.nav-items {
 		display: inline;
 	}

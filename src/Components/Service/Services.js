@@ -5,7 +5,6 @@ const Services = ({ serv }) => {
 	const { id, name, short, image } = serv;
 	// console.log(image);
 	return (
-		
 		<div className="item px-5 ">
 			<div>
 				<i className={image}></i>
@@ -16,7 +15,6 @@ const Services = ({ serv }) => {
 					<button className="btn btn-sm btn-danger text-white">
 						Learn More <i className="fas fa-arrow-right"></i>
 					</button>
-
 				</Link>
 			</div>
 		</div>

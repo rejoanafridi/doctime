@@ -6,7 +6,7 @@ const Details = ({ data }) => {
 	return (
 		<div>
 			<div>
-				{/* <img src={} alt="" /> */}
+				<img src={image} alt="" />
 				<h3>{name}</h3>
 				<p>{short}</p>
 				<h5>Description : </h5>

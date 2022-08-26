@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 
-
 import "./Book.css";
 const Book = () => {
 	// const id = window.location.pathname;
@@ -9,18 +8,14 @@ const Book = () => {
 	console.log(bookingId);
 	const [single, setSingle] = useState([]);
 
-
-
 	useEffect(() => {
 		fetch("/doctor.json")
 			.then((response) => response.json())
 			.then((data) => setSingle(data));
 	}, []);
-	
 
 	const value = single.find((d) => d.id == bookingId);
 
-	
 	return (
 		<div>
 			<div className="booking-container">
@@ -73,10 +68,15 @@ const Book = () => {
 								<input type="date" placeholder="" />
 								<input type="text" value={value?.short} />
 							</div>
-							<textarea placeholder="Message"></textarea>
-							<button class="btn btn-danger text-white" type="button">
-								Submit
-							</button>
+							<div className="d-flex ">
+								<textarea placeholder="Message"></textarea>
+								<button
+									className="btn btn-danger text-white mb-5"
+									type="button"
+								>
+									Submit
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -1,39 +1,39 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+
 import "./Servicedetails.css";
-// import s_Img from "../../images/doctor.jpg";
-import { useParams } from "react-router-dom";
-import Details from "./Details";
-const Servicedetails = () => {
+
+const ServiceDetails = () => {
 	const { serviceId } = useParams();
+	const [data, setData] = useState([]);
 
-	const [service, setService] = useState([]);
-
-	// const [single, setSingle] = useState([]);
-
-	useEffect(  () => {
-		fetch("service.json")
+	useEffect(() => {
+		fetch("/api_data.json")
 			.then((res) => res.json())
-			.then((data) => setService(data));
+			.then((data) => setData(data));
 	}, []);
 
-	// useEffect(() => {
-	// 	const value = service.find((d) => d.id == serviceId);
-	// 	setService(value);
-	// 	// console.log(single);
-	// }, [service]);
+	const filter = data.find((d) => d.id == serviceId);
+
 	return (
 		<div>
 			<div className="">
 				<div className="service-details">
-					{service.map((data) => (
-						<Details key={data.id} data={data}></Details>
-					))}
+					<div className="service-detail">
+						<h1>{filter?.name}</h1>
+						<i className={filter?.image} alt="" />
 
-					<p>ServiceDetails Page{serviceId}</p>
+						<p>{filter?.description}</p>
+						<Link to="/">
+							{" "}
+							<button className="btn btn-sm btn-danger text-white">
+								back to home
+							</button>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>
 	);
 };
-
-export default Servicedetails;
+export default ServiceDetails;

@@ -18,10 +18,9 @@ const Feature = () => {
 					Our <span> Doctors </span>{" "}
 				</h1>
 				<div className="container doctors">
-							{
-								doctor.map((data) => <Doctor key={data.id} doctor={data}></Doctor>)
-							}
-				
+					{doctor.map((data) => (
+						<Doctor key={data.id} doctor={data}></Doctor>
+					))}
 				</div>
 			</div>
 		</div>

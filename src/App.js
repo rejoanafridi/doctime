@@ -10,7 +10,7 @@ import Home from "./Components/Home/Home";
 import Register from "./Components/Auth/Register";
 import Header from "./Components/Shared/Header/Header";
 import Footer from "./Components/Shared/Footer/Footer";
-import Servicedetails from "./Components/Service/Servicedetails";
+import Servicedetails from "./Components/Service/ServiceDetails";
 import Notfound from "./Components/NotFound/Notfound";
 import PrivateRoute from "./Components/Auth/PrivateRoute/PrivateRoute";
 import AuthProvider from "./Components/contexts/AuthProvider";

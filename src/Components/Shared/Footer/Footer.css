@@ -18,6 +18,7 @@ footer {
 .quick_link i:hover {
 	color: crimson;
 	font-weight: bold;
+	cursor: pointer;
 }
 .quick_link span {
 	color: crimson;

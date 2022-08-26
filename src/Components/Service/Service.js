@@ -21,7 +21,7 @@ const Service = () => {
 				</h1>
 				<div className=" container items">
 					{data.map((s) => (
-						<Services key={s.id} serv={s}></Services>
+						<Services data={data} key={s.id} serv={s}></Services>
 					))}
 				</div>
 			</section>

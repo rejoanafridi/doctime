@@ -1,12 +1,42 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
+import useAuth from "../../hooks/useAuth";
 
 import "./Book.css";
 const Book = () => {
+	const history = useHistory();
+	const { user } = useAuth();
 	// const id = window.location.pathname;
 	const { bookingId } = useParams();
-	console.log(bookingId);
+
 	const [single, setSingle] = useState([]);
+
+	const [date, setDate] = useState("");
+
+	const [booking, setBooking] = useState({});
+	console.log(booking);
+
+	const handleDate = (e) => {
+		setDate(e.target.value);
+	};
+
+	const handleBooking = (e) => {
+		if (date != "") {
+			const books = {
+				name: value?.name,
+				email: user?.email,
+				date: date,
+				info: value?.short,
+			};
+			setBooking({ ...booking, ...books });
+			alert("Booking Succesfully Completed!!");
+			history.push("/");
+		} else {
+			alert("select appointment date first!!");
+		}
+
+		e.preventDefault();
+	};
 
 	useEffect(() => {
 		fetch("/doctor.json")
@@ -62,17 +92,23 @@ const Book = () => {
 						<div>
 							<div>
 								<input type="text" placeholder="name" value={value?.name} />
-								<input type="email" placeholder="email" value={value?.email} />
+								<input type="email" placeholder="email" value={user?.email} />
 							</div>
 							<div>
-								<input type="date" placeholder="" />
+								<input
+									onChange={handleDate}
+									type="date"
+									placeholder=""
+									required
+								/>
 								<input type="text" value={value?.short} />
 							</div>
 							<div className="d-flex ">
 								<textarea placeholder="Message"></textarea>
 								<button
 									className="btn btn-danger text-white mb-5"
-									type="button"
+									onClick={handleBooking}
+									type="submit"
 								>
 									Submit
 								</button>

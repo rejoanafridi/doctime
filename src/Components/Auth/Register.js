@@ -22,13 +22,18 @@ const Register = () => {
 	// };
 	const handleRegister = (e) => {
 		console.log("wow", email, pass);
-		createUserWithEmailAndPassword(auth, email, pass).then((result) => {
-			const user = result.user;
+		if (email != "" && pass != "") {
+			createUserWithEmailAndPassword(auth, email, pass).then((result) => {
+				const user = result.user;
 
-			{
-				email ? history.push("/login") : history.push("/register");
-			}
-		});
+				{
+					email ? history.push("/login") : history.push("/register");
+				}
+			});
+		} else {
+			alert("Please check ur email and password");
+		}
+
 		e.preventDefault();
 	};
 
@@ -39,12 +44,13 @@ const Register = () => {
 			</h1>
 			<div className="register-form">
 				<div>
-					<form action="">
+					<form>
 						<input
 							onChange={handleEmailChange}
 							type="email"
 							name="email"
 							placeholder="Enter your email"
+							required
 						/>
 
 						<input
@@ -52,6 +58,7 @@ const Register = () => {
 							type="password"
 							name="password"
 							placeholder="Enter your Password"
+							required
 						/>
 						{/* <input
 							onBlur={handlePasswordChange2}
@@ -74,13 +81,11 @@ const Register = () => {
 							>
 								<i class="fab fa-google"></i> google{" "}
 							</button>
-						
 						</div>
-						<div>-------------------------  or  ----------------------------</div>
+						<div>------------------------- or ----------------------------</div>
 						<p>
 							already registered <Link to="/login">Login here</Link>{" "}
 						</p>
-					
 					</form>
 				</div>
 			</div>

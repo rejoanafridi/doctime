@@ -8,7 +8,7 @@
 	width: 100%;
 }
 .logo {
-	color: black;
+	
 	font-size: 30px;
 	font-family: sans-serif;
 	font-weight: 500;
@@ -28,7 +28,7 @@
 	color: black;
 	padding: 0 10px;
 	margin: 0 5px;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 .active {
 	color: white !important;
@@ -37,7 +37,7 @@
 .nav-items a:hover {
 	color: #fff;
 	background-color: crimson;
-	transition: 0.5s ease-in-out;
+	transition: ease-in .7s ;
 }
 .login {
 	display: flex;
@@ -50,6 +50,17 @@
 	font-weight: 600;
 	margin-right: 50px;
 	width: 130px;
+}
+.login i{
+	padding: 5px 5px;
+	border-radius: 15px;
+
+}
+.login i:hover{
+	color: #fff;
+	background-color: crimson;
+	transition : ease-in .3s;
+
 }
 
 .menu-icons {

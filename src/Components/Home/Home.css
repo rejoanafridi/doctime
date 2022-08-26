@@ -13,13 +13,17 @@
 	color: crimson;
 }
 .content {
-	width: 70%;
+	width: 100%;
 }
 
 .content button {
 	border-radius: 50px;
 	color: white;
 	background-color: crimson;
+	padding: 2px 10px;
+	border: none;
+	box-shadow: 1px 5px 4px rgb(86, 80, 80);
+	transition: ease-in .7s;
 }
 .b_image img {
 	/* margin-left: 80px; */

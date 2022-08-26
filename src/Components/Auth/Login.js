@@ -20,12 +20,16 @@ const Login = () => {
 		setPass(e.target.value);
 	};
 	const handleLogin = (e) => {
-		signInWithEmailAndPassword(auth, email, pass).then((userCredential) => {
-			// Signed in
-			const user = userCredential.user;
-			console.log(user);
-			// ...
-		});
+		if (email != "" && pass != "") {
+			signInWithEmailAndPassword(auth, email, pass).then((userCredential) => {
+				// Signed in
+				const user = userCredential.user;
+				
+				
+			});
+		} else {
+			alert("please enter your email and password first");
+		}
 	};
 
 	return (

@@ -6,6 +6,7 @@ import "./Home.css";
 import Service from "../Service/Service";
 import Doctor from "../Home/Feature";
 import About from "../Shared/About/About";
+import { Link } from "react-router-dom";
 const Home = () => {
 	return (
 		<div>
@@ -16,14 +17,14 @@ const Home = () => {
 				<div className="container banner-contents">
 					<div className="content">
 						<h1>
-							A Modern <span>Clinic</span> In your City Now,,
+							A Modern <span>Clinic</span> In your City Now,
 						</h1>
 						<h3>
 							We are Offering <span>70% Discount</span> in every Medical Test.
 						</h3>
-						<button type="button" className="b-btn">
+						<Link to="/doctors"> <button type="button" className="b-btn">
 							Booking Now
-						</button>
+						</button> </Link>
 					</div>
 				</div>
 			</section>
